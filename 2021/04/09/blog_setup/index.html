@@ -21,7 +21,7 @@
 <meta property="og:image" content="http://z0527z.github.io/2021/04/09/blog_setup/npm_install">
 <meta property="og:image" content="http://z0527z.github.io/2021/04/09/blog_setup/deployment_setup">
 <meta property="article:published_time" content="2021-04-09T08:42:03.000Z">
-<meta property="article:modified_time" content="2021-04-09T10:14:54.000Z">
+<meta property="article:modified_time" content="2021-04-09T10:17:15.000Z">
 <meta property="article:author" content="jolin">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://z0527z.github.io/2021/04/09/blog_setup/node_env.png">
@@ -104,21 +104,21 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <ul>
-<li><p>安装Node.js和配置好Node.js环境<img src="./node_env.png"></p>
+<li><p>安装Node.js和配置好Node.js环境<img src="node_env.png"></p>
 </li>
-<li><p>安装git和配置好git环境<img src="./git_version.png"></p>
+<li><p>安装git和配置好git环境<img src="git_version.png"></p>
 </li>
 <li><p>新建一个<code>账户名.github.io</code> 的项目，并且需要勾选 <code>Initialize this repository with a README</code></p>
 </li>
-<li><p>安装Hexo，输入<code>npm install hexo -g</code><img src="./hexo_install.png">         安装完成后输入 <code>hexo -v</code>检查版本<img src="./hexo_install_success.png"></p>
+<li><p>安装Hexo，输入<code>npm install hexo -g</code><img src="hexo_install.png">         安装完成后输入 <code>hexo -v</code>检查版本<img src="hexo_install_success.png"></p>
 </li>
-<li><p>进入到博客文件夹，输入<code>hexo init</code>进行初始化<img src="./hexo_init">    输入<code>npm install</code>安装所需要的组件<img src="./npm_install"></p>
+<li><p>进入到博客文件夹，输入<code>hexo init</code>进行初始化<img src="hexo_init">    输入<code>npm install</code>安装所需要的组件<img src="npm_install"></p>
 </li>
 <li><p>新建一篇博客，在cmd执行命令：<code>hexo new post 博客名</code>，这时候在文件夹<code>_posts</code>目录下将会看到已经创建的文件</p>
 </li>
 <li><p>将hexo与github pages联系起来。在 <code>~/.ssh</code> 下生成新的rsa私钥跟公钥，输入以下内容：<code>ssh-keygen -t rsa -C &#39;&#39;邮箱&quot; </code>，然后将本地 <code>id_rsa.pub</code>中的内容拷贝复制到github上<code>settings</code>里的<code>ssh keys</code>里面</p>
 </li>
-<li><p>配置成功后修改执行<code>hexo init</code>文件下的<code>_config.yml</code>文件，配置最下面的<code>Deployment</code>, 配置如下：<img src="./deployment_setup"></p>
+<li><p>配置成功后修改执行<code>hexo init</code>文件下的<code>_config.yml</code>文件，配置最下面的<code>Deployment</code>, 配置如下：<img src="deployment_setup"></p>
 </li>
 <li><p>博客内容写完后在发布之前需要安装一个扩展：<code>npm install hexo-deployer-git --save</code>，安装完之后使用命令 <code>hexo d</code> 就可以生成部署了。</p>
 </li>
